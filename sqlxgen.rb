@@ -5,21 +5,21 @@
 class Sqlxgen < Formula
   desc "tool to generate sqlx models from schemas and queries"
   homepage "https://github.com/mvoorberg/sqlxgen"
-  version "1.0.7"
+  version "1.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mvoorberg/sqlxgen/releases/download/v1.0.7/sqlxgen_Darwin_arm64.tar.gz"
-      sha256 "40bb3761c272be80dd6fd7b356b746d4cb45f3143a800f669a221d2a89ab83be"
+      url "https://github.com/mvoorberg/sqlxgen/releases/download/v1.0.8/sqlxgen_Darwin_arm64.tar.gz"
+      sha256 "0ab17000c154babacd3abce3ff5b4745f289dc8827d4fe234475f7b4081a1f58"
 
       def install
         bin.install "sqlxgen"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mvoorberg/sqlxgen/releases/download/v1.0.7/sqlxgen_Darwin_x86_64.tar.gz"
-      sha256 "fcb22131873b47c602e0ac657142d1c6ef14dcbadb24bc4d792138030e2b3fb5"
+      url "https://github.com/mvoorberg/sqlxgen/releases/download/v1.0.8/sqlxgen_Darwin_x86_64.tar.gz"
+      sha256 "fc70d6db2c7c7bf95234b1414ad8bd0ae65accde53e60e80cfc0b6ac6fce13ee"
 
       def install
         bin.install "sqlxgen"
@@ -29,16 +29,16 @@ class Sqlxgen < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mvoorberg/sqlxgen/releases/download/v1.0.7/sqlxgen_Linux_arm64.tar.gz"
-      sha256 "03b267599a53b3d8a7ca928e7331fd00ebdd92686115776498177c266ec5f93f"
+      url "https://github.com/mvoorberg/sqlxgen/releases/download/v1.0.8/sqlxgen_Linux_arm64.tar.gz"
+      sha256 "3c7b810403ebb0efc9e61f4a1b6a8088a364cbc10ae4895eecef8cb0d2289867"
 
       def install
         bin.install "sqlxgen"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mvoorberg/sqlxgen/releases/download/v1.0.7/sqlxgen_Linux_x86_64.tar.gz"
-      sha256 "9cc8878258ca9ee6fe25906a2dfbcc9c049e2fc583be1a166b1707319a7d1d37"
+      url "https://github.com/mvoorberg/sqlxgen/releases/download/v1.0.8/sqlxgen_Linux_x86_64.tar.gz"
+      sha256 "6302d28fd8fa6baaa02e71cdaff998585c30da321eb1bac3405b0ffa48c175ac"
 
       def install
         bin.install "sqlxgen"
